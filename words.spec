@@ -9,7 +9,7 @@ Release:	19
 License:	Freeware
 Group:		Applications/Text
 Source0:	ftp://sunsite.unc.edu/pub/Linux/libs/linux.%{name}.%{version}.tar.gz
-# Source0-md5: e07b5955c35923cfad105b05666342f1
+# Source0-md5:	e07b5955c35923cfad105b05666342f1
 Patch0:		linux.%{name}-jbj.patch
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
