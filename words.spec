@@ -1,18 +1,18 @@
-Summary:     English dictionary for /usr/dict
-Summary(de): Englisches Wörterbuch für /usr/dict
-Summary(fr): Dictionnaire anglais pour /etc/dict
-Summary(fr): S³ownik angielski dla /usr/dict
-Summary(tr): Ýngilizce sözlük
-Name:        words
-Version:     2
-Release:     14
-Copyright:   freeware
-Group:       Utilities/Text
-Group(pl):   Narzêdzia/Tekst
-Source:      ftp://sunsite.unc.edu/pub/Linux/libs/linux.words.2.tar.gz
-Patch:       linux.words-jbj.patch
-Buildarch:   noarch
-BuildRoot:   /tmp/%{name}-%{version}-root
+Summary:	English dictionary for /usr/dict
+Summary(de):	Englisches Wörterbuch für /usr/dict
+Summary(fr):	Dictionnaire anglais pour /etc/dict
+Summary(fr):	S³ownik angielski dla /usr/dict
+Summary(tr):	Ýngilizce sözlük
+Name:		words
+Version:	2
+Release:	14
+Copyright:	freeware
+Group:		Utilities/Text
+Group(pl):	Narzêdzia/Tekst
+Source:		ftp://sunsite.unc.edu/pub/Linux/libs/linux.words.2.tar.gz
+Patch:		linux.words-jbj.patch
+Buildarch:	noarch
+BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
 This package contains the english dictionary in /usr/dict.  It is used by
