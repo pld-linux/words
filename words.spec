@@ -5,7 +5,7 @@ Summary(fr): S³ownik angielski dla /usr/dict
 Summary(tr): Ýngilizce sözlük
 Name:        words
 Version:     2
-Release:     13
+Release:     14
 Copyright:   freeware
 Group:       Utilities/Text
 Group(pl):   Narzêdzia/Tekst
@@ -50,17 +50,22 @@ install -d $RPM_BUILD_ROOT/usr/dict
 install usr/dict/linux.words $RPM_BUILD_ROOT/usr/dict
 ln -sf linux.words $RPM_BUILD_ROOT/usr/dict/words
 
-gzip -9nf $RPM_BUILD_ROOT/usr/dict/README*
+gzip -9nf usr/dict/README*
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc usr/dict/README.linux.words usr/dict/README2.linux.words
+%doc usr/dict/README.linux.words* usr/dict/README2.linux.words*
 %config %verify(not size mtime md5) /usr/dict/*
 
 %changelog
+* Thu Apr 22 1999 Artur Frysiak <wiget@pld.org.pl>
+  [2-14]
+- compiled on rpm 3
+- fixed gzipping %%doc
+
 * Wed Feb 17 1999 Micha³ Kuratczyk <kura@wroclaw.art.pl>
   [2-13]
 - added Group(pl)
