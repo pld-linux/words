@@ -8,9 +8,6 @@ Version:	2
 Release:	17
 License:	freeware
 Group:		Applications/Text
-Group(de):	Applikationen/Text
-Group(fr):	Utilitaires/Texte
-Group(pl):	Aplikacje/Tekst
 Source0:	ftp://sunsite.unc.edu/pub/Linux/libs/linux.%{name}.%{version}.tar.gz
 Patch0:		linux.%{name}-jbj.patch
 Buildarch:	noarch
