@@ -12,7 +12,7 @@ Group(pl):	Narzêdzia/Tekst
 Source:		ftp://sunsite.unc.edu/pub/Linux/libs/linux.words.2.tar.gz
 Patch:		linux.words-jbj.patch
 Buildarch:	noarch
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This package contains the english dictionary in /usr/share/dict.  It is used
