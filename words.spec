@@ -15,7 +15,7 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This package contains the english dictionary in /usr/share/dict. It is
+This package contains the English dictionary in /usr/share/dict. It is
 used by programs like ispell as a database of words to check for
 spelling and so forth.
 
