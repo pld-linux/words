@@ -47,13 +47,10 @@ install -d $RPM_BUILD_ROOT%{_datadir}/dict
 install usr/dict/linux.words $RPM_BUILD_ROOT%{_datadir}/dict/american-english
 ln -sf american-english $RPM_BUILD_ROOT%{_datadir}/dict/words
 
-gzip -9nf usr/dict/README*
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc usr/dict/{README.linux.words*,README2.linux.words*}.gz
-
+%doc usr/dict/{README.linux.words*,README2.linux.words*}
 %config %verify(not size mtime md5) %{_datadir}/dict/*
