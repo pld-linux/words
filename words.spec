@@ -1,11 +1,11 @@
-Summary:	English dictionary for /usr/dict
-Summary(de):	Englisches Wörterbuch für /usr/dict
-Summary(fr):	Dictionnaire anglais pour /etc/dict
-Summary(fr):	S³ownik angielski dla /usr/dict
-Summary(tr):	Ýngilizce sözlük
+Summary:	English dictionary for /usr/share/dict
+Summary(de):	Englisches Wörterbuch für /usr/share/dict
+Summary(fr):	Dictionnaire anglais pour /etc/share/dict
+Summary(fr):	S³ownik angielski dla /usr/share/dict
+Summary(tr):	ngilizce sözlük
 Name:		words
 Version:	2
-Release:	14
+Release:	15
 Copyright:	freeware
 Group:		Utilities/Text
 Group(pl):	Narzêdzia/Tekst
@@ -45,10 +45,10 @@ veri tabanýný kullanarak yazým hatalarýný bulmaya çalýþýrlar.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/usr/dict
+install -d $RPM_BUILD_ROOT%{_datadir}/dict
 
-install usr/dict/linux.words $RPM_BUILD_ROOT/usr/dict
-ln -sf linux.words $RPM_BUILD_ROOT/usr/dict/words
+install usr/dict/linux.words $RPM_BUILD_ROOT%{_datadir}/dict
+ln -sf linux.words $RPM_BUILD_ROOT%{_datadir}/dict/words
 
 gzip -9nf usr/dict/README*
 
@@ -57,8 +57,9 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc usr/dict/README.linux.words* usr/dict/README2.linux.words*
-%config %verify(not size mtime md5) /usr/dict/*
+%doc usr/dict/{README.linux.words*,README2.linux.words*}.gz
+
+%config %verify(not size mtime md5) %{_datadir}/dict/*
 
 %changelog
 * Thu Apr 22 1999 Artur Frysiak <wiget@pld.org.pl>
