@@ -45,10 +45,10 @@ veri tabanýný kullanarak yazým hatalarýný bulmaya çalýþýrlar.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_datadir}/dict
+install -d $RPM_BUILD_ROOT/usr/share/dict
 
-install usr/dict/linux.words $RPM_BUILD_ROOT%{_datadir}/dict
-ln -sf linux.words $RPM_BUILD_ROOT%{_datadir}/dict/words
+install usr/dict/linux.words $RPM_BUILD_ROOT/usr/share/dict/american-english
+ln -sf american-english $RPM_BUILD_ROOT/usr/share/dict/words
 
 gzip -9nf usr/dict/README*
 
@@ -59,7 +59,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc usr/dict/{README.linux.words*,README2.linux.words*}.gz
 
-%config %verify(not size mtime md5) %{_datadir}/dict/*
+%config %verify(not size mtime md5) /usr/share/dict/*
 
 %changelog
 * Thu Apr 22 1999 Artur Frysiak <wiget@pld.org.pl>
