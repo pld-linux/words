@@ -60,10 +60,3 @@ rm -rf $RPM_BUILD_ROOT
 %doc usr/dict/{README.linux.words*,README2.linux.words*}.gz
 
 %config %verify(not size mtime md5) %{_datadir}/dict/*
-
-%changelog
-* Mon May 31 1999 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
-  [2-15]
-- based on RH spec,
-- spec rewrited by PLD team,
-- pl translation Wojtek ¦lusarczyk <wojtek@shadow.eu.org>.
