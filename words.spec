@@ -15,19 +15,19 @@ Buildarch:	noarch
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
-This package contains the english dictionary in /usr/dict.  It is used by
-programs like ispell as a database of words to check for spelling and so
+This package contains the english dictionary in /usr/share/dict.  It is used
+by programs like ispell as a database of words to check for spelling and so
 forth.
 
 %description -l de
-Dieses Paket enthält das englische Wörterbuch in /usr/dict. Es wird von
-Programmen wie ispell als Wortdatenbank, z.B. zum Prüfen der
+Dieses Paket enthält das englische Wörterbuch in /usr/share/dict. Es wird
+von Programmen wie ispell als Wortdatenbank, z.B. zum Prüfen der
 Rechtschreibung, verwendet.
 
 %description -l fr
-Ce paquetage contient le dictionnaire anglais dans /usr/dict. Il est utilisé
-par des programmes comme ispell comme base de données de mots pour vérifier
-l'orthographe.
+Ce paquetage contient le dictionnaire anglais dans /usr/share/dict. Il est
+utilisé par des programmes comme ispell comme base de données de mots pour
+vérifier l'orthographe.
 
 %description -l pl
 W pakiecie tym znajduje siê s³ownik angielski. U¿ywany jest przez programy
