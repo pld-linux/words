@@ -5,7 +5,7 @@ Summary(pl):	S³ownik angielski dla /usr/share/dict
 Summary(tr):	ngilizce sözlük
 Name:		words
 Version:	2
-Release:	17
+Release:	18
 License:	Freeware
 Group:		Applications/Text
 Source0:	ftp://sunsite.unc.edu/pub/Linux/libs/linux.%{name}.%{version}.tar.gz
