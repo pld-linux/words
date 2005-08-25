@@ -54,4 +54,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc usr/dict/{README.linux.words*,README2.linux.words*}
-%config %verify(not size mtime md5) %{_datadir}/dict/*
+%config(noreplace) %verify(not md5 mtime size) %{_datadir}/dict/*
