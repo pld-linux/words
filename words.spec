@@ -39,7 +39,7 @@ sözcük veri tabanýný kullanarak yazým hatalarýný bulmaya çalýþýrlar.
 
 %prep
 %setup -q -c
-%patch -p1
+%patch0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
