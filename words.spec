@@ -1,8 +1,8 @@
 Summary:	English dictionary for /usr/share/dict
-Summary(de):	Englisches Wörterbuch für /usr/share/dict
-Summary(fr):	Dictionnaire anglais pour /etc/share/dict
-Summary(pl):	S³ownik angielski dla /usr/share/dict
-Summary(tr):	ngilizce sözlük
+Summary(de.UTF-8):   Englisches WÃ¶rterbuch fÃ¼r /usr/share/dict
+Summary(fr.UTF-8):   Dictionnaire anglais pour /etc/share/dict
+Summary(pl.UTF-8):   SÅ‚ownik angielski dla /usr/share/dict
+Summary(tr.UTF-8):   ngilizce sÃ¶zlÃ¼k
 Name:		words
 Version:	2
 Release:	19
@@ -19,23 +19,23 @@ This package contains the English dictionary in /usr/share/dict. It is
 used by programs like ispell as a database of words to check for
 spelling and so forth.
 
-%description -l de
-Dieses Paket enthält das englische Wörterbuch in /usr/share/dict. Es
-wird von Programmen wie ispell als Wortdatenbank, z.B. zum Prüfen der
+%description -l de.UTF-8
+Dieses Paket enthÃ¤lt das englische WÃ¶rterbuch in /usr/share/dict. Es
+wird von Programmen wie ispell als Wortdatenbank, z.B. zum PrÃ¼fen der
 Rechtschreibung, verwendet.
 
-%description -l fr
+%description -l fr.UTF-8
 Ce paquetage contient le dictionnaire anglais dans /usr/share/dict. Il
-est utilisé par des programmes comme ispell comme base de données de
-mots pour vérifier l'orthographe.
+est utilisÃ© par des programmes comme ispell comme base de donnÃ©es de
+mots pour vÃ©rifier l'orthographe.
 
-%description -l pl
-W pakiecie tym znajduje siê s³ownik angielski. U¿ywany jest przez
+%description -l pl.UTF-8
+W pakiecie tym znajduje siÄ™ sÅ‚ownik angielski. UÅ¼ywany jest przez
 programy takie jak ispell, kpasswd itp.
 
-%description -l tr
-Bu paket ingilizce sözlük içermektedir. Ispell gibi yazılımlar bu
-sözcük veri tabanını kullanarak yazım hatalarını bulmaya çalışırlar.
+%description -l tr.UTF-8
+Bu paket ingilizce sÃ¶zlÃ¼k iÃ§ermektedir. Ispell gibi yazÄ±lÄ±mlar bu
+sÃ¶zcÃ¼k veri tabanÄ±nÄ± kullanarak yazÄ±m hatalarÄ±nÄ± bulmaya Ã§alÄ±ÅŸÄ±rlar.
 
 %prep
 %setup -q -c
