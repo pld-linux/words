@@ -1,8 +1,8 @@
 Summary:	English dictionary for /usr/share/dict
-Summary(de.UTF-8):   Englisches Wörterbuch für /usr/share/dict
-Summary(fr.UTF-8):   Dictionnaire anglais pour /etc/share/dict
-Summary(pl.UTF-8):   Słownik angielski dla /usr/share/dict
-Summary(tr.UTF-8):   ngilizce sözlük
+Summary(de.UTF-8):	Englisches Wörterbuch für /usr/share/dict
+Summary(fr.UTF-8):	Dictionnaire anglais pour /etc/share/dict
+Summary(pl.UTF-8):	Słownik angielski dla /usr/share/dict
+Summary(tr.UTF-8):	ngilizce sözlük
 Name:		words
 Version:	2
 Release:	19
