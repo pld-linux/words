@@ -5,7 +5,7 @@ Summary(pl.UTF-8):	Słownik angielski dla /usr/share/dict
 Summary(tr.UTF-8):	ngilizce sözlük
 Name:		words
 Version:	2
-Release:	20
+Release:	21
 License:	Freeware
 Group:		Applications/Text
 Source0:	ftp://sunsite.unc.edu/pub/Linux/libs/linux.%{name}.%{version}.tar.gz
@@ -38,14 +38,16 @@ Bu paket ingilizce sözlük içermektedir. Ispell gibi yazılımlar bu
 sözcük veri tabanını kullanarak yazım hatalarını bulmaya çalışırlar.
 
 %prep
-%setup -q -c
+%setup -qc
+touch .ts -r usr/dict/linux.words
 %patch0 -p1
+touch -r .ts usr/dict/linux.words
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_datadir}/dict
 
-install usr/dict/linux.words $RPM_BUILD_ROOT%{_datadir}/dict/american-english
+cp -p usr/dict/linux.words $RPM_BUILD_ROOT%{_datadir}/dict/american-english
 ln -sf american-english $RPM_BUILD_ROOT%{_datadir}/dict/words
 
 %clean
@@ -54,4 +56,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc usr/dict/{README.linux.words*,README2.linux.words*}
-%config(noreplace) %verify(not md5 mtime size) %{_datadir}/dict/*
+%{_datadir}/dict/american-english
+%config(noreplace) %verify(not md5 mtime size) %{_datadir}/dict/words
