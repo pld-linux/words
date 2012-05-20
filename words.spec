@@ -39,9 +39,8 @@ sözcük veri tabanını kullanarak yazım hatalarını bulmaya çalışırlar.
 
 %prep
 %setup -qc
-touch .ts -r usr/dict/linux.words
-%patch0 -p1
-touch -r .ts usr/dict/linux.words
+%patch0 -p1 -b .jbj
+touch -r usr/dict/linux.words.jbj usr/dict/linux.words
 
 %install
 rm -rf $RPM_BUILD_ROOT
