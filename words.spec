@@ -39,7 +39,7 @@ sözcük veri tabanını kullanarak yazım hatalarını bulmaya çalışırlar.
 
 %prep
 %setup -qc
-%patch0 -p1 -b .jbj
+%patch -P0 -p1 -b .jbj
 touch -r usr/dict/linux.words.jbj usr/dict/linux.words
 
 %install
